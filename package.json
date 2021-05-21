@@ -19,6 +19,7 @@
     "build": "next build",
     "start": "next start"
   },
+  "heroku-postbuild": "npm run build",
   "keywords": [],
   "author": "",
   "license": "ISC"
