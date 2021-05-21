@@ -4,7 +4,6 @@ const { publicRuntimeConfig } = getConfig();
 import React, { Component } from "react";
 class MyDocument extends Document {
   setGoogleTags() {
-    if (publicRuntimeConfig.PRODUCTION) {
       return {
         __html: `
           window.dataLayer = window.dataLayer || [];
@@ -14,7 +13,7 @@ class MyDocument extends Document {
           gtag('config', 'UA-147955896-1');
         `,
       };
-    }
+    
   }
 
   render() {
