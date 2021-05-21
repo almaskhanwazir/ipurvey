@@ -1,0 +1,159 @@
+//Functions that converts pixel width to pecentage equivalent--------------------
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+//usage => width: width: calc-percent(330,1006);
+//Mixins for Responsive breakpoints-----------------------------------------------
+@mixin breakpoint($point) {
+  @if $point==screen1240 {
+    @media (max-width: 1240px) {
+      @content;
+    }
+  } @else if $point == screen1023 {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $point==screen991 {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $point==screen767 {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point==screen640 {
+    @media (max-width: 640px) {
+      @content;
+    }
+  }
+} //breakpoint
+
+//TRANSPARENT BACKGROUND ONLY STARTS
+@mixin transparentbg($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: transparent;
+  background-color: $rgba;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str}, endColorstr=#{$ie-hex-str});
+  zoom: 1;
+}
+
+@mixin writing-mode($value) {
+  @if $value==vertical-rl {
+    -ms-writing-mode: tb-rl;
+  } @else if $value==horizontal-tb {
+    -ms-writing-mode: lr-tb;
+  }
+  -webkit-writing-mode: $value;
+  writing-mode: $value;
+}
+$icons: "";
+@mixin spriteIcon($Image, $important: false) {
+  @if $important {
+    background: sprite($icons, $Image, 0, 0, false)
+      no-repeat
+      $important; // background-image: inline-image('../images/sprite-Icons.png') $important;
+  } @else {
+    background: sprite($icons, $Image, 0, 0, false)
+      no-repeat; // background-image: inline-image('../images/sprite-Icons.png');
+  }
+  @include sprite-dimensions($icons, $Image);
+}
+
+%clearfix:before,
+%clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+%clearfix:after {
+  clear: both;
+}
+
+%fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+%fi {
+  /* use $imp to prevent issues with browser extensions that change fonts */
+  font-family: "Linearicons-Free";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 25px;
+  display: inline-block;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%Im {
+  /* use $imp to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin input-placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin transition($value, $value2: none) {
+  -webkit-transition: $value, $value2;
+  -moz-transition: $value, $value2;
+  -ms-transition: $value, $value2;
+  -o-transition: $value, $value2;
+  transition: $value, $value2;
+}

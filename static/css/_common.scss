@@ -1,0 +1,297 @@
+@import "./importFiles";
+.input-field {
+  margin-top: 10px;
+  height: auto;
+  min-height: 40px;
+  border: 2px solid $light-blue;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  &.inValid {
+    border: 2px solid $red;
+  }
+  h6 {
+    font-size: 0.9em;
+    color: $light-blue;
+    width: fit-content;
+    margin-top: -10px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: $blue-white;
+    margin-block-end: 0.8em;
+  }
+  input,
+  textarea,
+  select {
+    background: transparent;
+    margin-right: 10px;
+    width: -webkit-fill-available;
+    border: none;
+    outline: none;
+  }
+  .labelsTitle {
+    width: 120px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 12px;
+  }
+  .labelsListItem {
+    display: inline-flex;
+    width: 100%;
+    overflow: hidden;
+    min-width: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    input {
+      margin-right: 35px;
+      flex: 1;
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    img {
+      max-width: 15%;
+      height: 20px;
+      margin-top: 0px;
+      margin-right: 20px;
+      &.visible {
+        visibility: visible;
+      }
+    }
+  }
+  &.no-label {
+    img {
+      margin-top: 10px;
+    }
+  }
+}
+
+
+.subForm {
+  height: 450px;
+  border-radius: 4px;
+  background: #fff; // @include box-shadow (30px 30px #31274f);
+  border: #000;
+  box-shadow: 1px 1px 2px 2px #acacac;
+  form{
+    width: 80%;
+    margin: 20px 0px 0px 40px;
+    padding-bottom: 20px;
+  }
+  h1{
+    text-align: center;
+    margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 30px;
+  }
+  label{
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  select,input{
+    margin-top: 10px;
+  }
+}
+
+.otherOption {
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  &:before {
+    background: #000;
+    height: 1px;
+    width: 100%;
+    content: "";
+    top: 11px;
+    display: block;
+    position: absolute;
+  }
+  span {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    background: $white;
+  }
+}
+
+.select {
+  height: 35px;
+  line-height: 45px;
+  font-family: $RubikRegular;
+  padding: 7px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 4px;
+  background: #e6e7e8;
+  border: none;
+  font-size: 15px;
+}
+
+.login {
+  padding: 30px;
+}
+
+.LoginInput {
+  height: 35px;
+  font-family: $RubikRegular;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  @include breakpoint(screen1023) {
+    margin-bottom: 18px;
+  }
+  @include input-placeholder {
+    font-style: italic;
+    color: #bdbfc1;
+  }
+  &.inValid {
+    border: 1px solid $red;
+  }
+}
+
+.noAccount {
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  font-family: $RubikRegular;
+  .link {
+    color: blue;
+  }
+}
+
+.invalidField {
+  border: 1px solid $red;
+}
+
+.validationMsg {
+  display: none;
+  color: $red;
+  margin-top: 10px;
+}
+
+.invalidField {
+  border: 1px solid $red;
+}
+
+.validationMsg {
+  display: none;
+  color: $red;
+  margin-top: 10px;
+}
+
+.LoginSubmit {
+  font-family: $RubikRegular;
+  background: $dark-blue;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  padding: 7px;
+  border-radius: 4px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  @include transition(0.3s all);
+  &:hover {
+    background: darken($blue, 5);
+  }
+}
+.form-group{
+  select{
+      height: 35px;
+      line-height: 45px;
+      font-family: $RubikRegular;
+      padding: 7px;
+      margin-bottom: 15px;
+      width: 100%;
+      border-radius: 4px;
+      background: #e6e7e8;
+      border: none;
+      font-size: 15px;
+    
+  }
+  input{
+    background: #e6e7e8;
+  }
+}
+.aeroplaneSvg{
+  height:80px;
+  margin: 140px 0px 0px 175px;
+}
+
+.station{
+  
+  padding-top: 0px;
+  .herobtm{
+    width: 100%;
+  }
+  .trainImg{
+    position: relative;
+    top: -35px;
+    height: 50px;
+  }
+  .trackImg{
+   
+  }
+}
+.CookieConsent{
+  background: #9DABBC !important;
+  filter: alpha(opacity=60);
+  opacity: 0.9;
+  h1{
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  }
+}
+.section3{
+  margin-top: 30px;
+  h1{
+    font-size: 30px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+}
+.section4{
+  background: #F0F4FC;
+  margin-top: 50px;
+  border-radius: 10px;
+  h1{
+    font-size: 25px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  margin: 40px;
+  }
+  p{
+    margin-left: 40px;
+    color: #5B7CBA;
+    font-family: ui-sans-serif;
+  }
+  img{
+    width: 250px;
+  }
+  h2{
+    font-size: 20px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  }
+
+}
