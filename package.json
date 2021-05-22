@@ -8,6 +8,7 @@
     "node-sass": "^4.12.0",
     "nprogress": "^0.2.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
     "react-cookie-consent": "^6.2.3",
     "react-dom": "^17.0.2",
     "reactstrap": "^8.9.0"
@@ -17,7 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -H 0.0.0.0 -p $PORT"
   },
   "heroku-postbuild": "npm run build",
   "engines": {

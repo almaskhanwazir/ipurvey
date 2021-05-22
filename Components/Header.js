@@ -27,12 +27,13 @@ const Header = () => {
         <Link href="/">
           <li><a className="nav-link scrollto">Home</a></li>
         </Link>
-        <Link href="/">
-          <li><a className="nav-link scrollto">About</a></li>
-        </Link>
-        <Link href="/">
+        <Link href="/blogs">
           <li><a className="nav-link scrollto">Blogs</a></li>
         </Link>
+        <Link href="/contact-us">
+          <li><a className="nav-link scrollto">Contact</a></li>
+        </Link>
+        
         </ul>
         <i 
         className={`${

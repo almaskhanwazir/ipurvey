@@ -63,7 +63,7 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <div class="col-md-4">copyright &#169 2021. iPurvey;</div>
+          <div class="col-md-4">copyright &#169; 2021. iPurvey;</div>
           <div class="col-md-4">
           <ul>
                   <Link href="/">
