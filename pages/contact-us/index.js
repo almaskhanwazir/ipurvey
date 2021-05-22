@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import Blog from "../../Components/Blog";
+import Contact from "../../Components/Contact";
+import Container from "../../components/container";
 
 export default function FirstPost(props) {
   return (
     <Layout>
-      <Blog/>
+      <Contact/>
     </Layout>
   );
 }
