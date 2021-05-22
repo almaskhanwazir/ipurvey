@@ -17,10 +17,10 @@ const HeroSection = (props) => {
                     Be the first to know when we arive!
                   </h1>
                   <h2 data-aos="fade-up" data-aos-delay="400">
-                    Be Among the first 100 early members and win iPurvey
+                   " Be Among the first 100 early members and win iPurvey
                     monitoring and raising compensation claim request for upto
                     5(five) rail and/or Flight journeys within the first 2 onths
-                    of launch, compeletly free.
+                    of launch, compeletly free."
                   </h2>
                   <img
                     className="aeroplaneSvg"
@@ -43,13 +43,13 @@ const HeroSection = (props) => {
         </Container>
         <img className="herobtm" src="/static/svg/heroBottom.svg" alt="" />
       </section>
-      <div class="row station">
+      <div className="row station">
         <img className="stationImg" src="/static/svg/station.svg" alt="" />
         <img className="trackImg" src="/static/svg/train-track.svg" alt="" />
         <img className="trainImg" src="/static/svg/train.svg" alt="" />
       </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2 section3">
+      <div className="row">
+        <div className="col-md-8 offset-md-2 section3">
           <h1>Lorem ipsum dolor sit amet </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -60,9 +60,9 @@ const HeroSection = (props) => {
           <img className="trainImg" src="/static/png/flightplane.png" alt="" />
         </div>
 
-        <div class="col-md-6 offset-md-3 section4">
-          <div class="row">
-            <div class="col-md-8">
+        <div className="col-md-6 offset-md-3 section4">
+          <div className="row">
+            <div className="col-md-8">
               <h1>Comming soon on your favourite devices!</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -72,7 +72,7 @@ const HeroSection = (props) => {
               <p>
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
               </p>
-              <div class="col-md-6 offset-md-3 section4">
+              <div className="col-md-6 offset-md-3 section4">
                 <h2>Comming Soon</h2>
                 <img
                   className="trainImg"
@@ -81,7 +81,7 @@ const HeroSection = (props) => {
                 />
               </div>
             </div>
-            <div class="col-md-4">
+            <div className="col-md-4">
               <img
                 className=""
                 src="/static/png/mobileapp.png"
@@ -90,10 +90,10 @@ const HeroSection = (props) => {
             </div>
           </div>
         </div>
-        <div class="section5">
+        <div className="section5">
           <div className="col-md-10 offset-md-1 ">
-            <div class="row">
-              <div class="col-md-8">
+            <div className="row">
+              <div className="col-md-8">
                 <img
                   className=""
                   src="/static/svg/ipurvey-logo2.svg"
@@ -134,33 +134,33 @@ const HeroSection = (props) => {
                   </Link>
                 </ul>
               </div>
-              <div class="col-md-4">
+              <div className="col-md-4">
                 <h1>Get in touch!</h1>
-                <form class="email-form">
-                  <div class="row gy-4">
-                    <div class="col-md-12">
+                <form className="email-form">
+                  <div className="row gy-4">
+                    <div className="col-md-12">
                       <input
                         type="text"
                         name="name"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Full Name"
                         required
                       />
                     </div>
 
-                    <div class="col-md-12 ">
+                    <div className="col-md-12 ">
                       <input
                         type="email"
-                        class="form-control"
+                        className="form-control"
                         name="email"
                         placeholder="Email Address"
                         required
                       />
                     </div>
 
-                    <div class="col-md-12">
+                    <div className="col-md-12">
                       <textarea
-                        class="form-control"
+                        className="form-control"
                         name="message"
                         rows="6"
                         placeholder="Message"
@@ -168,10 +168,10 @@ const HeroSection = (props) => {
                       ></textarea>
                     </div>
 
-                    <div class="col-md-12 text-center">
-                      {/* <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div> */}
+                    <div className="col-md-12 text-center">
+                      {/* <div className="loading">Loading</div>
+                  <div className="error-message"></div>
+                  <div className="sent-message">Your message has been sent. Thank you!</div> */}
 
                       <button type="submit">Send </button>
                     </div>
