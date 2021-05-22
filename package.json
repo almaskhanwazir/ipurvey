@@ -14,10 +14,14 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write **/.{js,ts,tsx} **//*.{js,ts,tsx}",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "jest",
+    "test-all": "yarn lint && yarn type-check && yarn test"
   },
   "heroku-postbuild": "npm run build",
   "engines": {
