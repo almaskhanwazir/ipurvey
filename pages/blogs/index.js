@@ -1,6 +1,6 @@
 
 import Layout from "../../Components/Layout";
-import Blog from "../../Components/Blog";
+import Blog from "../../Components/blog/Blog";
 
 export default function FirstPost(props) {
   return (
