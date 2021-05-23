@@ -98,6 +98,8 @@ const NewsSection = () => {
         <div className="col-md-4">
           <h1>facebook Feeds</h1>
           <div className="row">{socialFeed()}</div>
+          <h1>Instagram Feeds</h1>
+          <div className="row">{socialFeed()}</div>
         </div>
       </div>
     </div>
