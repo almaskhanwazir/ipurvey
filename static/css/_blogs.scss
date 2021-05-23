@@ -1,0 +1,40 @@
+// "carousel-section
+.carousel-section {
+  background: #f0f4fc;
+  margin-top: 30px;
+  border-radius: 10px;
+  .carouselTop {
+    h1 {
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: #000000;
+      font-family: "Roboto", sans-serif;
+      padding: 30px;
+    }
+  }
+  .carousel-inner img {
+    position: relative;
+    width: 100%;
+    height: 40%;
+  }
+  .carousel-inner-item {
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    button{
+      padding: 8px 10px;;
+    }
+    p{
+      font-size: 12px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
+      padding-bottom: 20px;
+    }
+  }
+}

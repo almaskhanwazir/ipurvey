@@ -1,4 +1,4 @@
-import "../static/css/_common.scss";
+import "../static/css/index.scss";
 export default function App({ Component, pageProps }) {
    return <Component {...pageProps} />
 }

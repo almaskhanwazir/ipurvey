@@ -14,7 +14,7 @@ const Header = () => {
       <header id="header" className="header ">
     <div className="container-fluid container-xl d-flex align-items-center ">
 
-      <a href="index.html" className="logo d-flex align-items-center">
+      <a href="/" className="logo d-flex align-items-center">
         <img src="/static/svg/logo.svg" alt=""/>
       </a>
       
