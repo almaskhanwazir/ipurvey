@@ -11,18 +11,18 @@ const SubscribeForm = () => {
     <div className="subForm">
       <h1 data-aos="fade-up">Care to share some info</h1>
       <form action="" method="post" name="login">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+        <div className="form-group">
+          <label>Email address</label>
           <input
             type="email"
             name="email"
-            class="form-control"
+            className="form-control"
             id="email"
             aria-describedby="emailHelp"
             placeholder="Enter email"
           />
         </div>{" "}
-        <div class="form-group">
+        <div className="form-group">
           <label>How did you hear about us</label>
           <select
             name="LookupToLookupSelected"
@@ -35,23 +35,23 @@ const SubscribeForm = () => {
             ))}
           </select>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <div
-            class="g-recaptcha"
+            className="g-recaptcha"
             data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"
             data-callback="verifyRecaptchaCallback"
             data-expired-callback="expiredRecaptchaCallback"
           ></div>
           <input
-            class="form-control d-none"
+            className="form-control d-none"
             data-recaptcha="true"
             required
             data-error="Please complete the Captcha"
           />
-          <div class="help-block with-errors"></div>
+          <div className="help-block with-errors"></div>
         </div>
-        <div class="col-md-12 text-center ">
-          <button type="submit" class=" btn  mybtn btn-primary">
+        <div className="col-md-12 text-center ">
+          <button type="submit" className=" btn  mybtn btn-primary">
             Get Notified
           </button>
         </div>

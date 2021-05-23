@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="footer-Section">
       <div className="col-md-10 offset-md-1 ">
         <div className="row">
-          <div class="col-md-4">
+          <div className="col-md-4">
             <p>connect with us</p>
             <hr />
             <ul>
@@ -63,8 +63,8 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <div class="col-md-4">copyright &#169; 2021. iPurvey;</div>
-          <div class="col-md-4">
+          <div className="col-md-4">copyright &#169; 2021. iPurvey;</div>
+          <div className="col-md-4">
           <ul>
                   <Link href="/">
                     <li>
