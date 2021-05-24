@@ -23,10 +23,10 @@
     position: absolute;
     bottom: 40px;
     color: white;
-    button{
-      padding: 8px 10px;;
+    button {
+      padding: 8px 10px;
     }
-    p{
+    p {
       font-size: 12px;
     }
     h1 {
@@ -41,35 +41,91 @@
 
 // new section
 
-.news-section{
-  h5{
+.news-section {
+  margin-top: 30px;
+  h5 {
     font-family: "Roboto", sans-serif;
     color: #000000;
     font-size: 15px;
     margin-bottom: 0px;
+    padding-left: 5%;
+    padding-top: 5%;
   }
-  .text-muted-custom{
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: blue;
+    font-size: 25px;
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+  .text-muted-custom {
     font-size: 9px;
-    
   }
-  p{
+  p {
     margin-bottom: 0rem;
-    line-height: 1.0;
+    line-height: 1;
+    padding-left: 5%;
+    padding-top: 5%;
   }
-  a{
+  a {
     font-size: 11px;
     line-height: 0.7;
   }
-  .right{
-    margin-left: 30%;
+  .right {
+    margin-left: 50%;
+    margin-bottom: 5%;
   }
-  .card{
+  .card {
     border: none !important;
     margin-top: 10px;
   }
-  .card-body{
+  .card-body {
     border: #000;
-    box-shadow: 0px 2px 0px 1px #b6b4b4;
-    border-radius: 10px;
+    box-shadow: 0px 2px 0px 0px #b6b4b4;
+    padding: 10px 0px !important;
+  }
+  .card-text {
+    padding-right: 10px;
+  }
+  .socialFeeds {
+    margin-top: 40px;
+    .insta button {
+      color: white;
+      background: #7E2EA6;
+      display: flex;
+      text-align: center;
+      margin: 50px auto;
+    }
+    img{
+      height:115%
+    }
+    .fb button {
+      color: white;
+      background: #2E58A6;
+      display: flex;
+      text-align: center;
+      margin: 50px auto;
+    }
+
+    span.fbIcon {
+      background: url(../svg//fbIcon.svg) no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      display: inline-block;
+      height: 20px;
+      width: 25px;
+      margin-top: 3px;
+    }
+    span.instaIcon {
+      background: url(../svg/instaIcon.svg) no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      display: inline-block;
+      height: 20px;
+      width: 25px;
+      margin-top: 5px;
+    }
   }
 }

@@ -24,7 +24,7 @@ const CarouselSection = () => {
             width="1100"
             height="500"
           />
-          <div class="carousel-inner-item col-md-10 offset-md-1 ">
+          <div className="carousel-inner-item col-md-10 offset-md-1 ">
           <h1>News Heading</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -34,7 +34,7 @@ const CarouselSection = () => {
               <p>
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris enim ad minim veniam, quis nostrud exercitation ullamco laboris
               </p>
-              <button type="button" class="btn btn-light">Learn more</button>
+              <button type="button" className="btn btn-light">Learn more</button>
           </div>
         </div>);
       });   
